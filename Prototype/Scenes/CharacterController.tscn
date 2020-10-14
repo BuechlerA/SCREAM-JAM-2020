@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Prototype/Scripts/CharacterController.gd" type="Script" id=1]
+
+[sub_resource type="CapsuleMesh" id=1]
+
+[sub_resource type="PrismMesh" id=2]
+
+[sub_resource type="CapsuleShape" id=3]
+radius = 1.05222
+height = 1.78331
+
+[node name="CharacterController" type="KinematicBody"]
+script = ExtResource( 1 )
+
+[node name="Body" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1.2, 0, 1, -1.95505e-07, 0, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Nose" type="MeshInstance" parent="."]
+transform = Transform( 0.729522, 0, 0, 0, -6.81272e-08, -0.501794, 0, 0.87325, -1.70725e-07, 0, 0.6778, 0.777253 )
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0 )
+shape = SubResource( 3 )

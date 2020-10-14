@@ -16,3 +16,4 @@ light_color = Color( 1, 0.811765, 0.419608, 1 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.98233, 0 )
 
 [node name="Camera" parent="." instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 0, 6.86587, -14.4457 )

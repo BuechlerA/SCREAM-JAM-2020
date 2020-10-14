@@ -66,4 +66,4 @@ interact={
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/default_environment="res://Prototype/default_env.tres"

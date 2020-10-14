@@ -17,11 +17,11 @@ func _physics_process(delta):
 	var up_dir = Vector3(0,1,0)
 	if follow_enabled:
 		var offset = curr_pos - target
-		offset = offset.normalized() * follow_distance
-		offset.y  = follow_height
-		
-		curr_pos = target + offset
-		
+#		offset = offset.normalized() * follow_distance
+#		offset.y  = follow_height
+		offset.y = target.y
+		curr_pos.y = target.y
+#		curr_pos = target + offset
 		look_at_from_position(curr_pos,target, up_dir)
 	elif !follow_enabled:
 		look_at(target, up_dir)

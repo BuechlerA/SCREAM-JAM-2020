@@ -7,7 +7,7 @@
 [sub_resource type="PrismMesh" id=2]
 
 [sub_resource type="CapsuleShape" id=3]
-radius = 1.05222
+radius = 1.68817
 height = 1.78331
 
 [node name="CharacterController" type="KinematicBody"]
@@ -26,3 +26,5 @@ material/0 = null
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0 )
 shape = SubResource( 3 )
+
+[node name="RayCast" type="RayCast" parent="."]

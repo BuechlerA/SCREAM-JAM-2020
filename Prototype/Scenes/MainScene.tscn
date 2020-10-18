@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Prototype/Scenes/CharacterController.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Prototype/cool_horror_env.tres" type="Environment" id=2]
-[ext_resource path="res://Prototype/Scripts/CharacterController.gd" type="Script" id=3]
+[ext_resource path="res://models/Tentacles/TENTACLE_SETUP.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Prototype/Scenes/Stairs.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Prototype/Scripts/CameraBehaviour.gd" type="Script" id=5]
 
@@ -28,8 +28,115 @@ environment = ExtResource( 2 )
 [node name="PlayerPos" type="Spatial" parent="Camera"]
 transform = Transform( 0.245968, 0, 0.969278, 0, 1, 0, -0.969278, 0, 0.245968, 0.349935, 0.541335, -13.7918 )
 
-[node name="Player" type="KinematicBody" parent="Camera/PlayerPos" instance=ExtResource( 1 )]
-script = ExtResource( 3 )
+[node name="Player" parent="Camera/PlayerPos" instance=ExtResource( 1 )]
 
 [node name="Spatial" parent="." instance=ExtResource( 4 )]
 transform = Transform( 17.2426, 0, 0, 0, 17.2426, 0, 0, 0, 17.2426, 0, -31.5445, 0 )
+
+[node name="TENTACLE_SETUP" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.6285, -6.16188, 2 )
+
+[node name="TENTACLE_SETUP2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3291, -6.16188, 2 )
+
+[node name="TENTACLE_SETUP3" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.899, -6.16188, 0.915142 )
+
+[node name="TENTACLE_SETUP4" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.899, -6.41611, -1.53731 )
+
+[node name="TENTACLE_SETUP5" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15.193, -5.67286, -5.20434 )
+
+[node name="TENTACLE_SETUP6" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8763, -5.46532, -6.76553 )
+
+[node name="TENTACLE_SETUP7" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.992373, 0, -0.123272, 0, 1, 0, 0.123272, 0, -0.992373, -11.4385, -6.16188, -8.89783 )
+
+[node name="TENTACLE_SETUP8" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.992373, 0, -0.123272, 0, 1, 0, 0.123272, 0, -0.992373, -13.7203, -6.16188, -8.61438 )
+
+[node name="TENTACLE_SETUP9" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.992373, 0, -0.123272, 0, 1, 0, 0.123272, 0, -0.992373, -16.9906, -6.16188, -7.11496 )
+
+[node name="TENTACLE_SETUP10" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.992373, 0, -0.123272, 0, 1, 0, 0.123272, 0, -0.992373, -16.6883, -6.41611, -4.68121 )
+
+[node name="TENTACLE_SETUP11" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.992373, 0, -0.123272, 0, 1, 0, 0.123272, 0, -0.992373, -11.975, -5.67286, -1.57147 )
+
+[node name="TENTACLE_SETUP12" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.992373, 0, -0.123272, 0, 1, 0, 0.123272, 0, -0.992373, -16.0663, -5.46532, 0.509937 )
+
+[node name="TENTACLE_SETUP13" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -13.6789, -6.16188, -2.83525 )
+
+[node name="TENTACLE_SETUP14" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -15.6289, -6.16188, -1.61675 )
+
+[node name="TENTACLE_SETUP15" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -17.9629, -6.16188, 1.12101 )
+
+[node name="TENTACLE_SETUP16" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -16.6632, -6.41611, 3.20079 )
+
+[node name="TENTACLE_SETUP17" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -11.0785, -5.67286, 4.03504 )
+
+[node name="TENTACLE_SETUP18" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -13.9119, -5.46532, 7.64655 )
+
+[node name="TENTACLE_SETUP19" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -13.6789, -6.16188, -9.24235 )
+
+[node name="TENTACLE_SETUP20" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -15.6289, -6.16188, -8.02385 )
+
+[node name="TENTACLE_SETUP21" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -17.9629, -6.16188, -5.28609 )
+
+[node name="TENTACLE_SETUP22" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -16.6632, -6.41611, -3.20631 )
+
+[node name="TENTACLE_SETUP23" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -11.0785, -5.67286, -2.37205 )
+
+[node name="TENTACLE_SETUP24" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -13.9119, -5.46532, 1.23945 )
+
+[node name="TENTACLE_SETUP25" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -12.5491, -6.16188, -9.24235 )
+
+[node name="TENTACLE_SETUP26" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -14.499, -6.16188, -8.02385 )
+
+[node name="TENTACLE_SETUP27" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -16.833, -6.16188, -5.28609 )
+
+[node name="TENTACLE_SETUP28" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -15.5334, -6.41611, -3.20631 )
+
+[node name="TENTACLE_SETUP29" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -9.94866, -5.67286, -2.37205 )
+
+[node name="TENTACLE_SETUP30" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -12.782, -5.46532, 1.23945 )
+
+[node name="TENTACLE_SETUP31" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -12.7326, -7.72444, -3.11478 )
+
+[node name="TENTACLE_SETUP32" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -14.6825, -7.72444, -1.89628 )
+
+[node name="TENTACLE_SETUP33" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -17.0165, -7.72444, 0.841478 )
+
+[node name="TENTACLE_SETUP34" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -15.7169, -7.97867, 2.92126 )
+
+[node name="TENTACLE_SETUP35" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -10.1321, -7.23542, 3.75551 )
+
+[node name="TENTACLE_SETUP36" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.848039, 0, -0.529934, 0, 1, 0, 0.529934, 0, -0.848039, -12.9655, -7.02788, 7.36702 )

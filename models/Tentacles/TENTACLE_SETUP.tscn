@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://models/ANIMATION_LAUNCHER.gd" type="Script" id=1]
+[ext_resource path="res://models/Tentacles/lol.gltf" type="PackedScene" id=2]
+
+[node name="TENTACLE_SETUP" type="Spatial"]
+script = ExtResource( 1 )
+ani_player = NodePath("lol/AnimationPlayer")
+action = "WIGGLE"
+
+[node name="lol" parent="." instance=ExtResource( 2 )]
+
+[editable path="lol"]

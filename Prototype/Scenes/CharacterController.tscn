@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Prototype/Scripts/CharacterController.gd" type="Script" id=1]
+[ext_resource path="res://models/Character/OLDGUY_SETUP.tscn" type="PackedScene" id=2]
+[ext_resource path="res://models/ANIMATION_LAUNCHER.gd" type="Script" id=3]
 
 [sub_resource type="CapsuleMesh" id=1]
 
@@ -15,11 +17,13 @@ script = ExtResource( 1 )
 
 [node name="Body" type="MeshInstance" parent="."]
 transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1.2, 0, 1, -1.95505e-07, 0, 0, 0 )
+visible = false
 mesh = SubResource( 1 )
 material/0 = null
 
 [node name="Nose" type="MeshInstance" parent="."]
 transform = Transform( 0.729522, 0, 0, 0, -6.81272e-08, -0.501794, 0, 0.87325, -1.70725e-07, 0, 0.6778, 0.777253 )
+visible = false
 mesh = SubResource( 2 )
 material/0 = null
 
@@ -28,3 +32,13 @@ transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0
 shape = SubResource( 3 )
 
 [node name="RayCast" type="RayCast" parent="."]
+
+[node name="OLDGUY_SETUP" parent="." instance=ExtResource( 2 )]
+transform = Transform( 2.86879, 0, 0, 0, 2.86879, 0, 0, 0, 2.86879, 0, -2.48138, 0 )
+script = ExtResource( 3 )
+ani_player = NodePath("old_guy/AnimationPlayer")
+action = "Walk_down"
+
+[editable path="OLDGUY_SETUP"]
+
+[editable path="OLDGUY_SETUP/old_guy"]
